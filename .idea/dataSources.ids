@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - sch@scholars.com" uuid="551ff6b9-80cf-460c-8c78-4a3086477193">
+    <database-info product="MySQL" version="5.6.17" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+      <schema id="1" name="sch">
+        <visible>1</visible>
+      </schema>
+      <schema id="2" name="easyecom"/>
+      <schema id="3" name="hello"/>
+      <schema id="4" name="information_schema"/>
+      <schema id="5" name="mysql"/>
+      <schema id="6" name="performance_schema"/>
+      <schema id="7" name="test"/>
+      <table id="8" parent="1" name="achievement"/>
+      <table id="9" parent="1" name="admin"/>
+      <table id="10" parent="1" name="experts"/>
+      <table id="11" parent="1" name="faculty"/>
+      <table id="12" parent="1" name="feedback"/>
+      <table id="13" parent="1" name="flashnews"/>
+      <table id="14" parent="1" name="gallery"/>
+      <table id="15" parent="1" name="latest"/>
+      <table id="16" parent="1" name="registeredtutor"/>
+      <table id="17" parent="1" name="services"/>
+      <table id="18" parent="1" name="slider"/>
+      <table id="19" parent="1" name="special_course"/>
+      <table id="20" parent="1" name="student"/>
+      <table id="21" parent="1" name="usermessage"/>
+      <column id="22" parent="8" name="s_n">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="23" parent="8" name="achievement">
+        <mandatory>1</mandatory>
+        <data-type>text|0</data-type>
+      </column>
+      <key id="24" parent="8" name="PRIMARY">
+        <columns>s_n</columns>
+        <primary>1</primary>
+      </key>
+      <column id="25" parent="9" name="serno">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="26" parent="9" name="username">
+        <mandatory>1</mandatory>
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="27" parent="9" name="password">
+        <mandatory>1</mandatory>
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="28" parent="9" name="role">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)|0</data-type>
+        <default-expression>&apos;student&apos;</default-expression>
+      </column>
+      <key id="29" parent="9" name="PRIMARY">
+        <columns>serno</columns>
+        <primary>1</primary>
+      </key>
+      <column id="30" parent="10" name="snumber">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="31" parent="10" name="designation">
+        <mandatory>1</mandatory>
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="32" parent="10" name="cotation">
+        <mandatory>1</mandatory>
+        <data-type>text|0</data-type>
+      </column>
+      <column id="33" parent="10" name="name">
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="34" parent="10" name="image">
+        <mandatory>1</mandatory>
+        <data-type>blob|0</data-type>
+      </column>
+      <column id="35" parent="10" name="image_type">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <key id="36" parent="10" name="PRIMARY">
+        <columns>snumber</columns>
+        <primary>1</primary>
+      </key>
+      <column id="37" parent="11" name="serialn">
+        <mandatory>1</mandatory>
+        <data-type>int(10)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="38" parent="11" name="Name">
+        <mandatory>1</mandatory>
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="39" parent="11" name="Education">
+        <mandatory>1</mandatory>
+        <data-type>varchar(500)|0</data-type>
+      </column>
+      <column id="40" parent="11" name="University">
+        <mandatory>1</mandatory>
+        <data-type>varchar(500)|0</data-type>
+      </column>
+      <column id="41" parent="11" name="image_url">
+        <mandatory>1</mandatory>
+        <data-type>text|0</data-type>
+      </column>
+      <column id="42" parent="11" name="detail">
+        <mandatory>1</mandatory>
+        <data-type>text|0</data-type>
+      </column>
+      <key id="43" parent="11" name="PRIMARY">
+        <columns>serialn</columns>
+        <primary>1</primary>
+      </key>
+      <column id="44" parent="12" name="Sn">
+        <mandatory>1</mandatory>
+        <data-type>int(10)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="45" parent="12" name="Role">
+        <mandatory>1</mandatory>
+        <data-type>varchar(500)|0</data-type>
+      </column>
+      <column id="46" parent="12" name="Name">
+        <mandatory>1</mandatory>
+        <data-type>varchar(250)|0</data-type>
+      </column>
+      <column id="47" parent="12" name="Review">
+        <mandatory>1</mandatory>
+        <data-type>text|0</data-type>
+      </column>
+      <column id="48" parent="12" name="permission">
+        <mandatory>1</mandatory>
+        <data-type>int(10)|0</data-type>
+      </column>
+      <column id="49" parent="12" name="time">
+        <mandatory>1</mandatory>
+        <data-type>datetime|0</data-type>
+        <default-expression>CURRENT_TIMESTAMP</default-expression>
+      </column>
+      <key id="50" parent="12" name="PRIMARY">
+        <columns>Sn</columns>
+        <primary>1</primary>
+      </key>
+      <column id="51" parent="13" name="serialno">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="52" parent="13" name="flash">
+        <mandatory>1</mandatory>
+        <data-type>text|0</data-type>
+      </column>
+      <column id="53" parent="13" name="entry_date">
+        <data-type>datetime|0</data-type>
+        <default-expression>CURRENT_TIMESTAMP</default-expression>
+      </column>
+      <key id="54" parent="13" name="PRIMARY">
+        <columns>serialno</columns>
+        <primary>1</primary>
+      </key>
+      <column id="55" parent="14" name="seriall">
+        <mandatory>1</mandatory>
+        <data-type>int(10)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="56" parent="14" name="gtitle">
+        <mandatory>1</mandatory>
+        <data-type>varchar(300)|0</data-type>
+      </column>
+      <column id="57" parent="14" name="image_url">
+        <mandatory>1</mandatory>
+        <data-type>text|0</data-type>
+      </column>
+      <column id="58" parent="14" name="detail">
+        <mandatory>1</mandatory>
+        <data-type>text|0</data-type>
+      </column>
+      <key id="59" parent="14" name="PRIMARY">
+        <columns>seriall</columns>
+        <primary>1</primary>
+      </key>
+      <column id="60" parent="15" name="sn">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="61" parent="15" name="latestnews">
+        <mandatory>1</mandatory>
+        <data-type>text|0</data-type>
+      </column>
+      <key id="62" parent="15" name="PRIMARY">
+        <columns>sn</columns>
+        <primary>1</primary>
+      </key>
+      <column id="63" parent="16" name="Serial_n">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="64" parent="16" name="First_name">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="65" parent="16" name="Last_name">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="66" parent="16" name="contact_no">
+        <mandatory>1</mandatory>
+        <data-type>int(10)|0</data-type>
+      </column>
+      <column id="67" parent="16" name="Email">
+        <mandatory>1</mandatory>
+        <data-type>text|0</data-type>
+      </column>
+      <column id="68" parent="16" name="area">
+        <data-type>text|0</data-type>
+      </column>
+      <column id="69" parent="16" name="class">
+        <data-type>text|0</data-type>
+      </column>
+      <column id="70" parent="16" name="subject">
+        <data-type>text|0</data-type>
+      </column>
+      <key id="71" parent="16" name="PRIMARY">
+        <columns>Serial_n</columns>
+        <primary>1</primary>
+      </key>
+      <column id="72" parent="17" name="srl">
+        <mandatory>1</mandatory>
+        <data-type>int(10)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="73" parent="17" name="service">
+        <mandatory>1</mandatory>
+        <data-type>varchar(500)|0</data-type>
+      </column>
+      <column id="74" parent="17" name="image_url">
+        <mandatory>1</mandatory>
+        <data-type>text|0</data-type>
+      </column>
+      <column id="75" parent="17" name="detail">
+        <mandatory>1</mandatory>
+        <data-type>text|0</data-type>
+      </column>
+      <column id="76" parent="17" name="details_link">
+        <data-type>varchar(300)|0</data-type>
+      </column>
+      <key id="77" parent="17" name="PRIMARY">
+        <columns>srl</columns>
+        <primary>1</primary>
+      </key>
+      <column id="78" parent="18" name="sliderid">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="79" parent="18" name="image_url">
+        <mandatory>1</mandatory>
+        <data-type>text|0</data-type>
+      </column>
+      <key id="80" parent="18" name="PRIMARY">
+        <columns>sliderid</columns>
+        <primary>1</primary>
+      </key>
+      <column id="81" parent="19" name="sern">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="82" parent="19" name="heading">
+        <mandatory>1</mandatory>
+        <data-type>varchar(300)|0</data-type>
+      </column>
+      <column id="83" parent="19" name="image_url">
+        <mandatory>1</mandatory>
+        <data-type>text|0</data-type>
+      </column>
+      <column id="84" parent="19" name="details">
+        <mandatory>1</mandatory>
+        <data-type>text|0</data-type>
+      </column>
+      <column id="85" parent="19" name="details_link">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <key id="86" parent="19" name="PRIMARY">
+        <columns>sern</columns>
+        <primary>1</primary>
+      </key>
+      <column id="87" parent="20" name="fname">
+        <mandatory>1</mandatory>
+        <data-type>varchar(300)|0</data-type>
+      </column>
+      <column id="88" parent="20" name="lname">
+        <mandatory>1</mandatory>
+        <data-type>varchar(300)|0</data-type>
+      </column>
+      <column id="89" parent="20" name="contact">
+        <mandatory>1</mandatory>
+        <data-type>int(10)|0</data-type>
+      </column>
+      <column id="90" parent="20" name="email">
+        <mandatory>1</mandatory>
+        <data-type>varchar(300)|0</data-type>
+      </column>
+      <column id="91" parent="20" name="img_url">
+        <mandatory>1</mandatory>
+        <data-type>varchar(300)|0</data-type>
+      </column>
+      <column id="92" parent="21" name="Serial_no">
+        <mandatory>1</mandatory>
+        <data-type>int(10)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="93" parent="21" name="name">
+        <mandatory>1</mandatory>
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="94" parent="21" name="email">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="95" parent="21" name="subject">
+        <data-type>varchar(1000)|0</data-type>
+      </column>
+      <column id="96" parent="21" name="message">
+        <data-type>text|0</data-type>
+      </column>
+      <key id="97" parent="21" name="PRIMARY">
+        <columns>Serial_no</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+</component>
